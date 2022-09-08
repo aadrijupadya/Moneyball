@@ -1,3 +1,0 @@
-library(tidyverse)
-nba_shooting_small <- read_csv(file = "data/nba_shooting_small.csv")
-nba_shooting_small
