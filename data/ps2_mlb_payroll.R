@@ -64,6 +64,6 @@ batting_recent <- select(tmp_batting, playerID, yearID, teamID, lgID, BBP, KP, O
 
 ggplot(data = batting_recent) + 
   geom_point(mapping = aes(x = BBP, y = SLG))
-ggplot(data = relative_payroll) +
- geom_histogram(mapping = aes(x = SLG, y = ..density..), bins = 50)
+ggplot(data = batting_recent) +
+ geom_histogram(mapping = aes(x = SLG, y = ..density..), bins = 30)
 batting_recent
